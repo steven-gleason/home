@@ -1,0 +1,29 @@
+61c61
+< Mod1 F1 :Exec terminal
+---
+> Mod1 F1 :Exec terminal -x bash --login
+90,91c90,91
+< Mod4 Left :SendToPrevWorkspace
+< Mod4 Right :SendToNextWorkspace
+---
+> #Mod4 Left :SendToPrevWorkspace
+> #Mod4 Right :SendToNextWorkspace
+137a138,155
+> 
+> # sgleason
+> ##########
+> 
+> # fluxbox menu
+> Mod4 M :RootMenu
+> 
+> # move the current window
+> Mod4 Shift Left  :Move -5  0
+> Mod4 Shift Right :Move  5  0
+> Mod4 Shift Up    :Move  0 -5
+> Mod4 Shift Down  :Move  0  5
+> 
+> # resize the current window
+> Mod4 Left  :ResizeHorizontal -5
+> Mod4 Right :ResizeHorizontal  5
+> Mod4 Up    :ResizeVertical   -5
+> Mod4 Down  :ResizeVertical    5
